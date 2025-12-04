@@ -1,0 +1,11 @@
+### 1. Probar pago con Yape (Debería funcionar)
+POST http://localhost:8080/api/pagos/procesar?pasarela=yape&monto=15.50
+
+### 2. Probar pago con PayPal (Debería funcionar)
+POST http://localhost:8080/api/pagos/procesar?pasarela=paypal&monto=100.00
+
+### 3. Deshabilitar PayPal (Simular acción de Administrador RF2)
+POST http://localhost:8080/api/pagos/configurar?pasarela=paypal&habilitada=false
+
+### 4. Intentar pagar con PayPal de nuevo (Debería fallar)
+POST http://localhost:8080/api/pagos/procesar?pasarela=paypal&monto=200.00
