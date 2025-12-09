@@ -8,7 +8,7 @@ public class ProductCatalog {
     private List<Product> productos = new ArrayList<>();
 
     public ProductCatalog() {
-        // Simulamos datos iniciales
+
         productos.add(new Product("Laptop HP", "Tecnologia", 2500.00));
         productos.add(new Product("Mouse Gamer", "Tecnologia", 50.00));
         productos.add(new Product("Escritorio", "Muebles", 300.00));
