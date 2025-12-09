@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Component
-@Primary // ¡Clave! Esto le dice a Spring: "Usa este por defecto, no el real"
+@Primary
 public class ReportServiceProxy implements ReportService {
 
     private final ReportService servicioReal;

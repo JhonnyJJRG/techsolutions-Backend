@@ -12,7 +12,6 @@ public class InventoryService {
 
     private final List<InventoryObserver> observadores = new ArrayList<>();
 
-    // Inyectamos todos los observadores que encuentre Spring (Gerente y Compras)
     @Autowired
     public InventoryService(List<InventoryObserver> observadoresExistentes) {
         this.observadores.addAll(observadoresExistentes);
@@ -33,7 +32,6 @@ public class InventoryService {
         }
     }
 
-    // Métodos para agregar/quitar observadores manualmente si fuera necesario
     public void agregarObservador(InventoryObserver obs) {
         observadores.add(obs);
     }

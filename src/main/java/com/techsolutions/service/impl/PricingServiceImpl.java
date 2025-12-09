@@ -15,8 +15,7 @@ public class PricingServiceImpl {
     @Autowired
     public PricingServiceImpl(Map<String, PricingStrategy> estrategias) {
         this.estrategias = estrategias;
-        // Definimos una estrategia por defecto para evitar errores (usamos "estandar")
-        // Asegúrate de que la clase StandardPricingStrategy tenga @Component("estandar")
+
         this.estrategiaActual = estrategias.getOrDefault("estandar", estrategias.values().iterator().next());
     }
 

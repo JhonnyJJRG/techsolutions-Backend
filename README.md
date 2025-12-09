@@ -82,6 +82,9 @@ curl.exe "http://localhost:8080/api/precios/calcular?precioBase=100"
 # Cambiar a estrategia de Descuento
 curl.exe -X POST "http://localhost:8080/api/precios/estrategia?nombre=descuento"
 
+# Resultado del descuento
+curl.exe "http://localhost:8080/api/precios/calcular?precioBase=100"
+
 ### 3. Pedidos y Deshacer (Command + Memento)
 
 # 1. Crear Pedido

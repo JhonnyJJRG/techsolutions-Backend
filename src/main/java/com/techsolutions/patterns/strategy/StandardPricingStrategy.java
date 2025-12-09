@@ -6,6 +6,6 @@ import org.springframework.stereotype.Component;
 public class StandardPricingStrategy implements PricingStrategy {
     @Override
     public double calcularPrecio(double precioBase) {
-        return precioBase; // Cobra el precio normal
+        return precioBase;
     }
 }
